@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telephone Number Validator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="./assets/telephone-receiver-svgrepo-com.svg"
+      type="image/xml+svg"
+    />
+  </head>
+  <body>
+    <h1 id="h1">Telephone Number Validator</h1>
+    <p id="subtitle">
+      <span style="color: red">U</span><span style="color: #f2f2f2">S</span
+      ><span style="color: blue">A</span>
+      <i
+        class="em em-flag-um"
+        aria-role="presentation"
+        aria-label="U.S. Outlying Islands Flag"
+      ></i>
+    </p>
+    <div class="box-phone">
+      <div class="frontcam-bar"></div>
+      <div class="container-validation-number">
+        <div class="container-input">
+          <label id="label-user-input" for="user-input"
+            >Enter a Phone Number</label
+          >
+          <input type="text" id="user-input" />
+        </div>
+        <div id="results-div"></div>
+        <div class="interactive-buttons">
+          <button class="btn" id="check-btn">Check</button
+          ><button class="btn" id="clear-btn">Clear</button>
+        </div>
+      </div>
+      <div class="menu-button"></div>
+    </div>
+    <div class="box-explanation">
+      <p class="p">Here are some examples of valid formats for US numbers:</p>
+      <ul class="list">
+        <li class="list-item">1 555-555-5555</li>
+        <li class="list-item">1 (555) 555-5555</li>
+        <li class="list-item">1(555)555-5555</li>
+        <li class="list-item">1 555 555 5555</li>
+        <li class="list-item">5555555555</li>
+        <li class="list-item">555-555-5555</li>
+        <li class="list-item">(555)555-5555</li>
+      </ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

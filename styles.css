@@ -1,0 +1,150 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+  max-width: 100dvw;
+  background: conic-gradient(
+    from 0deg,
+    #a8d5e2,
+    #f8c8dc,
+    #b9e4c9,
+    #fde7a9,
+    #d4b5e4,
+    #fbcbb9,
+    #a8d5e2
+  );
+  color: #020202;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  padding: 2rem 0;
+}
+#h1 {
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px #160303;
+}
+#subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+
+  text-shadow: 1px 1px 2px rgb(146, 18, 18);
+}
+.box-phone {
+  margin: auto;
+  width: 17rem;
+  height: 32rem;
+  background-color: white;
+  border: 8px solid #333;
+  border-radius: 40px;
+  padding: 0 1rem;
+}
+.frontcam-bar {
+  background-color: #333;
+  width: 8rem;
+  height: 1.2rem;
+  margin: auto;
+  border-radius: 0 0 50px 50px;
+  margin-bottom: 1rem;
+}
+#label-user-input {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#user-input {
+  width: 20%;
+  margin: 0.5rem 0 1.2rem;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #333;
+  text-align: center;
+
+  transition: all 0.6s ease-in-out;
+}
+#user-input:focus {
+  width: 80%;
+}
+#results-div {
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  height: 310px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  .good {
+    color: #009e08;
+  }
+  .bad {
+    color: rgb(194, 0, 0);
+  }
+}
+.interactive-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+.btn {
+  width: 5rem;
+  background-color: #272e94;
+  color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 0px 2px 2px #4b509b;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  box-shadow: 0px 0px 1px 4px #272e94;
+}
+.btn:nth-of-type(2) {
+  background-color: #b33d3d;
+  box-shadow: 0px 0px 2px 2px #9b4b5f;
+}
+.btn:nth-of-type(2):hover {
+  box-shadow: 0px 0px 1px 4px #b33d3d;
+}
+.menu-button {
+  height: 0.3rem;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+  background-color: #656464;
+  margin-top: 0.8rem;
+}
+.box-explanation {
+  margin: 1rem auto 0rem;
+
+  max-width: 300px;
+
+  font-size: 1.2rem;
+
+  .list {
+    margin-top: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+
+    padding: 0rem 1rem;
+
+    .list-item {
+      list-style-position: inside;
+    }
+  }
+}
